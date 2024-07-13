@@ -25,7 +25,7 @@ const Home = () => {
               <img
                 src="./lookingStroke.png"
                 alt="stroke"
-                className=" md:block left-28 top-[37px] relative md:bottom-[-72px] md:left-[140px] md:w-[220px] object-contain"
+                className=" md:block left-28 bottom-[-36px] relative md:bottom-[-72px] md:left-[140px] md:w-[220px] object-contain"
               />
               We’re a <span className="font-bold">family-run</span> North East
               self storage company that’s rated{" "}
@@ -40,7 +40,9 @@ const Home = () => {
         </div>
         <div className=" flex flex-col md:flex-row gap-4 md:justify-between">
           {reviews.map(({ user, review }) => (
+            <div key={user}>
             <RatingCard review={review} reviewer={user} />
+            </div>
           ))}
         </div>
         <p className="text-[#285581] text-[16px]">
