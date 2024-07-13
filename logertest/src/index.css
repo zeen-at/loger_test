@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .gradient_background {
+    @apply m-0 p-0 bg-gradient-to-r from-[#4680B9] to-[#386694];
+  }
+  .review_gradient_background {
+    @apply m-0 p-0 bg-gradient-to-b from-[#FFFFFF] to-[#FFF5E5];
+  }
+}
